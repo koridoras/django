@@ -5,10 +5,10 @@ from django.core.validators import RegexValidator, MinLengthValidator
 class Department(models.Model):
     name = models.CharField('配属先', max_length=20)
     created_at = models.DateTimeField('日付', default=timezone.now)
-
+    
     def __str__(self):
         return self.name
-
+        
 
 class Status(models.Model):
     name = models.CharField('雇用形態', max_length=20)
@@ -47,4 +47,7 @@ class Employee(models.Model):
     def __str__(self):
         return '{0} {1} {2} {3} {4} {5} {6}'.format(self.last_name, self.first_name, self.department, self.sex, self.phone_number, self.password, self.id)
     
-    
+
+    #messi
+
+
